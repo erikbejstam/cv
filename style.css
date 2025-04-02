@@ -1,0 +1,17 @@
+body {
+    background: #fcf6e9;
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 3em;
+    color: rgb(0, 48, 136);
+}
+
+.main-container {}
+
+h1 {
+    font-weight: 400;
+}
+
+li {
+    list-style-type: none;
+}
+
