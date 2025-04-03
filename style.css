@@ -1,17 +1,85 @@
 body {
-    background: #fcf6e9;
+    display: flex;
+    flex-direction: column;
+
     font-family: 'Ibarra Real Nova', serif;
-    font-size: 3em;
+    background: #fcf6e9;
     color: rgb(0, 48, 136);
+    font-size: 2em;
+
+    margin: 30px;
 }
 
-.main-container {}
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
 
 h1 {
     font-weight: 400;
+    margin: 10px;
+    opacity: 0;
+    flex: 0 0 65%;
+}
+
+.profile-pic {
+    max-width: 16%;
+    flex: 1;
 }
 
 li {
     list-style-type: none;
+    font-size: 24px;
 }
 
+ul {
+    font-size: 32px;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: rgb(0, 48, 136);
+}
+
+a:hover {
+    color: rgb(115, 154, 225);
+}
+
+hr {
+    width: 40%;
+    color: rgb(0, 48, 136);
+    animation: fadeInLine 2s ease-in-out forwards;
+}
+
+.about {
+    padding: 20px;
+}
+
+.text-animation {
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+/* cant make it work like i want it to!! */
+.text-animation h1:nth-child(1) {animation-delay: 3s;} 
+.text-animation div:nth-child(2) {animation-delay: 1s;}
+.text-animation div:nth-child(3) {animation-delay: 2s;}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInLine {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.3;
+    }
+}
