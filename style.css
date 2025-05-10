@@ -15,8 +15,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    width: 70px;
 }
 
 .header-container {
@@ -88,6 +86,16 @@ hr {
 }
 
 .text-animation h1:nth-child(1) {animation-delay: 3s;} 
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }    
+
+    .profile-pic {
+        max-width: 30%;
+    }
+}
 
 @keyframes fadeIn {
     0% {
