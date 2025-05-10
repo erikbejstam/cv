@@ -10,6 +10,15 @@ body {
     margin: 30px;
 }
 
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 70px;
+}
+
 .header-container {
     display: flex;
     flex-direction: row;
@@ -20,16 +29,16 @@ body {
 h1 {
     font-weight: 400;
     margin: 10px;
-    opacity: 0;
     flex: 0 0 65%;
 }
 
 .profile-pic {
     max-width: 16%;
     flex: 1;
+    animation: fadeIn 5s ease-in-out forwards;
 }
 
-li {
+div.links li {
     list-style-type: none;
     font-size: 24px;
 }
@@ -54,17 +63,31 @@ hr {
 }
 
 .about {
-    padding: 20px;
+    margin-left: 10px;
+    font-size: 1em;
+    font-family: cursive;
+    color: rgb(255, 97, 61);
+    animation: fadeInSpiritual 10s ease-in-out forwards;
+}
+
+.learning {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.learning ul {
+    font-size: 20px;
 }
 
 .text-animation {
-    animation: fadeIn 2s ease-in-out forwards;
+    animation: fadeIn 1s ease-in-out forwards;
 }
 
-/* cant make it work like i want it to!! */
 .text-animation h1:nth-child(1) {animation-delay: 3s;} 
-.text-animation div:nth-child(2) {animation-delay: 1s;}
-.text-animation div:nth-child(3) {animation-delay: 2s;}
 
 @keyframes fadeIn {
     0% {
@@ -76,6 +99,15 @@ hr {
 }
 
 @keyframes fadeInLine {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.3;
+    }
+}
+
+@keyframes fadeInSpiritual {
     0% {
         opacity: 0;
     }
