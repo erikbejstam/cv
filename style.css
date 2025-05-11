@@ -49,12 +49,23 @@ h2 {
 div.links li {
     list-style-type: none;
     font-size: 24px;
-    font-style: italic;
 }
+
+li::before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background: url('static/bullet.svg') no-repeat center center;
+    background-size: contain;
+    margin-right: 6px;
+}
+
 
 ul {
     margin-top: 0em;
     margin-bottom: 1.7em;
+    padding-left: 0.8em;
     font-size: 32px;
     list-style: none;
 }
@@ -78,7 +89,6 @@ hr {
 
 .about {
     display: flex;
-
     font-size: 0.7em;
     font-style: italic;
     /* color: rgb(137, 137, 184); */
